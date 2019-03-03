@@ -31,6 +31,7 @@ services:
             - webnet
         logging:
             driver: none
+        restart: always
 networks:
     webnet:
         name: webnet
