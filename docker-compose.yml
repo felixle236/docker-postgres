@@ -1,8 +1,8 @@
 version: '3.7'
 services:
     postgresql:
-        container_name: postgresql
-        image: postgres:12.1
+        container_name: postgres
+        image: postgres:13
         environment:
             - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
         volumes:
@@ -26,7 +26,7 @@ services:
         ports:
             - ${ADMIN_PORT}:80
         depends_on:
-            - postgresql
+            - postgres
         networks:
             - webnet
         logging:
