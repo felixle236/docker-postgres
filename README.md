@@ -1,4 +1,4 @@
-# docker-postgresql
+# docker-postgres
 Docker PostgreSQL
 
 ## Quick Start
